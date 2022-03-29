@@ -1,0 +1,661 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/Ecommerce_shopper.css" rel="stylesheet">
+<link href="css/shoes.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/modal.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#headerLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_headerLayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#navigationLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_navigationLayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#rolloverLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_rolloverLayoutGrid').offset().top }, 600, 'easeOutSine');
+   });
+   $("a[href*='#latestLayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_latestLayoutGrid1').offset().top }, 600, 'easeOutSine');
+   });
+   paypal.minicart.render({
+   styles: '@keyframes pop-in {    0% { opacity: 0; transform: scale(0.1); }    60% { opacity: 1; transform: scale(1.2); }    100% { transform: scale(1); }}@-webkit-keyframes pop-in {    0% { opacity: 0; -webkit-transform: scale(0.1); }    60% { opacity: 1; -webkit-transform: scale(1.2); }    100% { -webkit-transform: scale(1); }}@-moz-keyframes pop-in {    0% { opacity: 0; -moz-transform: scale(0.1); }    60% { opacity: 1; -moz-transform: scale(1.2); }    100% { -moz-transform: scale(1); }}.minicart-showing #PPMiniCart {    display: block;    transform: translateZ(0);    -webkit-transform: translateZ(0);    -moz-transform: translateZ(0);    animation: pop-in 0.25s;    -webkit-animation: pop-in 0.25s;    -moz-animation: pop-in 0.25s;}#PPMiniCart {    display: none;    position: fixed;    left: 50%;    top: 75px;}#PPMiniCart form {    position: relative;    width: 600px;    max-height: 400px;    margin-left: -300px;    padding: 10px 10px 40px;    background: #fbfbfb;    border: 1px solid #d7d7d7;    border-radius: 4px;    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);    font: 15px/normal arial, helvetica;    color: #333;}#PPMiniCart form.minicart-empty {    padding-bottom: 10px;    font-size: 16px;    font-weight: bold;}#PPMiniCart ul {    clear: both;    box-sizing: border-box;   float: left;    width: 100%;    margin: 5px 0 20px;    padding: 10px;    list-style-type: none;    background: transparent;    border: 0px solid #ccc; }#PPMiniCart .minicart-empty ul {    display: none;}#PPMiniCart .minicart-closer {    float: right;    margin: -12px -10px 0;    padding: 10px;    background: 0;    border: 0;    font-size: 18px;    cursor: pointer;    font-weight: bold;}#PPMiniCart .minicart-item {    clear: left;    padding: 6px 0;    min-height: 25px;}#PPMiniCart .minicart-item + .minicart-item {    border-top: 1px solid #f2f2f2;}#PPMiniCart .minicart-item a {    color: #333;    text-decoration: none;}#PPMiniCart .minicart-details-name {    float: left;    width: 62%;}#PPMiniCart .minicart-details-quantity {    float: left;    width: 15%;}#PPMiniCart .minicart-details-remove {    float: left;    width: 7%;}#PPMiniCart .minicart-details-price {    float: left;    width: 16%;    text-align: right;}#PPMiniCart .minicart-attributes {    margin: 0;    padding: 0;    background: transparent;    border: 0;    border-radius: 0;    box-shadow: none;    color: #999;    font-size: 12px;    line-height: 22px;}#PPMiniCart .minicart-attributes li {    display: inline;}#PPMiniCart .minicart-attributes li:after {    content: ",";}#PPMiniCart .minicart-attributes li:last-child:after {    content: "";}#PPMiniCart .minicart-quantity {    width: 30px;    height: 18px;    padding: 2px 4px;    border: 1px solid #ccc;    border-radius: 4px;    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);    font-size: 13px;    text-align: right;    transition: border linear 0.2s, box-shadow linear 0.2s;    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;}#PPMiniCart .minicart-quantity:hover {    border-color: #0078C1;}#PPMiniCart .minicart-quantity:focus {    border-color: #0078C1;    outline: 0;    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(0, 120, 193, 0.4);}#PPMiniCart .minicart-remove {    width: 18px;    height: 19px;    margin: 2px 0 0;    padding: 0;    background: #b7b7b7;    border: 1px solid #a3a3a3;    border-radius: 3px;    color: #fff;    font-size: 13px;    opacity: 0.70;    cursor: pointer;}#PPMiniCart .minicart-remove:hover {    opacity: 1;}#PPMiniCart .minicart-footer {    clear: left;}#PPMiniCart .minicart-subtotal {    position: absolute;    bottom: 17px;    padding-left: 6px;    left: 10px;    font-size: 16px;    font-weight: bold;}#PPMiniCart .minicart-submit {    position: absolute;    bottom: 10px;    right: 10px;    min-width: 100px;    height: auto;    margin-right: 6px;    padding: 10px 16px;    text-align: left;   border: 1px solid #ffc727;    border-radius: 5px;    color: #000;    cursor: pointer;    background: #ffaa00;} #PPMiniCart .minicart-logo { display: block; vertical-align: bottom; width: 65px; height: 21px; }#PPMiniCart form {    font-family: Arial;   font-size: 13px;   text-align: left;   border-color: rgba(34,34,34,0.16);   border-radius: 0px;   background-color: #FBFBFB;   color: #222222;   box-shadow: 2px 2px 10px rgba(0,0,0,0.50);}#PPMiniCart .minicart-submit { background: #FFC439;   border: 1px solid #FFC439;   border-radius: 0px;   font-size: 0.9em;   color: #000000;}#PPMiniCart .minicart-item a{   color: #222222;}#PPMiniCart .minicart-item + .minicart-item{   border-top: 1px solid rgba(34,34,34,0.08);}#PPMiniCart .minicart-attributes{   font-size: 0.75em;   color: #222222;   opacity: 0.60;}#PPMiniCart .minicart-remove{   border-radius: 50%;}#PPMiniCart .minicart-subtotal{   font-size: 1.0em;}#PPMiniCart .minicart-quantity, #PPMiniCart .minicart-quantity:hover{   border: 1px solid rgba(34,34,34,0.27);   font-size: 1.0em;   color: #222222;}',
+   template: '<%var items = cart.items();var settings = cart.settings();var hasItems = !!items.length;var priceFormat = { format: true, currency: cart.settings("currency_code") };var totalFormat = { format: true, showCode: true };%><form method="post" class="<% if (!hasItems) { %>minicart-empty<% } %>" action="<%= config.action %>" target="<%= config.target %>">    <% if (hasItems) { %><span class="minicart-header"><%= config.strings.header %></span><% } %><button type="button" class="minicart-closer">&times;</button>    <ul>        <% for (var i= 0, idx = i + 1, len = items.length; i < len; i++, idx++) { %>        <li class="minicart-item">            <div class="minicart-details-name">                <a class="minicart-name" href="<%= items[i].get("href") %>"><%= items[i].get("item_name") %></a>                <ul class="minicart-attributes">                    <% if (items[i].get("item_number")) { %>                    <li>                        <%= items[i].get("item_number") %>                        <input type="hidden" name="item_number_<%= idx %>" value="<%= items[i].get("item_number") %>" />                    </li>                    <% } %>                    <% if (items[i].discount()) { %>                    <li>                        <%= config.strings.discount %> <%= items[i].discount(priceFormat) %>                        <input type="hidden" name="discount_amount_<%= idx %>" value="<%= items[i].discount() %>" />                    </li>                    <% } %>                    <% for (var options = items[i].options(), j = 0, len2 = options.length; j < len2; j++) { %>                        <li>                            <%= options[j].key %>: <%= options[j].value %>                            <input type="hidden" name="on<%= j %>_<%= idx %>" value="<%= options[j].key %>" />                            <input type="hidden" name="os<%= j %>_<%= idx %>" value="<%= options[j].value %>" />                        </li>                    <% } %>                </ul>            </div>            <div class="minicart-details-quantity">                <input class="minicart-quantity" data-minicart-idx="<%= i %>" name="quantity_<%= idx %>" type="text" pattern="[0-9]*" value="<%= items[i].get("quantity") %>" autocomplete="off" />            </div>            <div class="minicart-details-remove">                <button type="button" class="minicart-remove" data-minicart-idx="<%= i %>">&times;</button>            </div>            <div class="minicart-details-price">                <span class="minicart-price"><%= items[i].total(priceFormat) %></span>            </div>            <input type="hidden" name="item_name_<%= idx %>" value="<%= items[i].get("item_name") %>" />            <input type="hidden" name="amount_<%= idx %>" value="<%= items[i].amount() %>" />            <input type="hidden" name="shipping_<%= idx %>" value="<%= items[i].get("shipping") %>" />            <input type="hidden" name="shipping2_<%= idx %>" value="<%= items[i].get("shipping2") %>" />        </li>        <% } %>    </ul>    <div class="minicart-footer">        <% if (hasItems) { %>            <div class="minicart-terms"> <input type="checkbox" id="minicart-terms-checkbox" name="terms"><%= config.strings.terms %></div> <div class="minicart-subtotal">                <%= config.strings.subtotal %> <%= cart.total(totalFormat) %>            </div>            <button class="minicart-submit" type="submit" data-minicart-alt="<%= config.strings.buttonAlt %>"><%- config.strings.button %><svg class="minicart-logo" width="100" height="32" viewBox="0 0 100 32" xmlns="http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg" preserveAspectRatio="xMinYMin meet"><path fill="#003087" d="M 12 4.917 L 4.2 4.917 C 3.7 4.917 3.2 5.317 3.1 5.817 L 0 25.817 C -0.1 26.217 0.2 26.517 0.6 26.517 L 4.3 26.517 C 4.8 26.517 5.3 26.117 5.4 25.617 L 6.2 20.217 C 6.3 19.717 6.7 19.317 7.3 19.317 L 9.8 19.317 C 14.9 19.317 17.9 16.817 18.7 11.917 C 19 9.817 18.7 8.117 17.7 6.917 C 16.6 5.617 14.6 4.917 12 4.917 Z M 12.9 12.217 C 12.5 15.017 10.3 15.017 8.3 15.017 L 7.1 15.017 L 7.9 9.817 C 7.9 9.517 8.2 9.317 8.5 9.317 L 9 9.317 C 10.4 9.317 11.7 9.317 12.4 10.117 C 12.9 10.517 13.1 11.217 12.9 12.217 Z"></path><path fill="#003087" d="M 35.2 12.117 L 31.5 12.117 C 31.2 12.117 30.9 12.317 30.9 12.617 L 30.7 13.617 L 30.4 13.217 C 29.6 12.017 27.8 11.617 26 11.617 C 21.9 11.617 18.4 14.717 17.7 19.117 C 17.3 21.317 17.8 23.417 19.1 24.817 C 20.2 26.117 21.9 26.717 23.8 26.717 C 27.1 26.717 29 24.617 29 24.617 L 28.8 25.617 C 28.7 26.017 29 26.417 29.4 26.417 L 32.8 26.417 C 33.3 26.417 33.8 26.017 33.9 25.517 L 35.9 12.717 C 36 12.517 35.6 12.117 35.2 12.117 Z M 30.1 19.317 C 29.7 21.417 28.1 22.917 25.9 22.917 C 24.8 22.917 24 22.617 23.4 21.917 C 22.8 21.217 22.6 20.317 22.8 19.317 C 23.1 17.217 24.9 15.717 27 15.717 C 28.1 15.717 28.9 16.117 29.5 16.717 C 30 17.417 30.2 18.317 30.1 19.317 Z"></path><path fill="#003087" d="M 55.1 12.117 L 51.4 12.117 C 51 12.117 50.7 12.317 50.5 12.617 L 45.3 20.217 L 43.1 12.917 C 43 12.417 42.5 12.117 42.1 12.117 L 38.4 12.117 C 38 12.117 37.6 12.517 37.8 13.017 L 41.9 25.117 L 38 30.517 C 37.7 30.917 38 31.517 38.5 31.517 L 42.2 31.517 C 42.6 31.517 42.9 31.317 43.1 31.017 L 55.6 13.017 C 55.9 12.717 55.6 12.117 55.1 12.117 Z"></path><path fill="#009cde" d="M 67.5 4.917 L 59.7 4.917 C 59.2 4.917 58.7 5.317 58.6 5.817 L 55.5 25.717 C 55.4 26.117 55.7 26.417 56.1 26.417 L 60.1 26.417 C 60.5 26.417 60.8 26.117 60.8 25.817 L 61.7 20.117 C 61.8 19.617 62.2 19.217 62.8 19.217 L 65.3 19.217 C 70.4 19.217 73.4 16.717 74.2 11.817 C 74.5 9.717 74.2 8.017 73.2 6.817 C 72 5.617 70.1 4.917 67.5 4.917 Z M 68.4 12.217 C 68 15.017 65.8 15.017 63.8 15.017 L 62.6 15.017 L 63.4 9.817 C 63.4 9.517 63.7 9.317 64 9.317 L 64.5 9.317 C 65.9 9.317 67.2 9.317 67.9 10.117 C 68.4 10.517 68.5 11.217 68.4 12.217 Z"></path><path fill="#009cde" d="M 90.7 12.117 L 87 12.117 C 86.7 12.117 86.4 12.317 86.4 12.617 L 86.2 13.617 L 85.9 13.217 C 85.1 12.017 83.3 11.617 81.5 11.617 C 77.4 11.617 73.9 14.717 73.2 19.117 C 72.8 21.317 73.3 23.417 74.6 24.817 C 75.7 26.117 77.4 26.717 79.3 26.717 C 82.6 26.717 84.5 24.617 84.5 24.617 L 84.3 25.617 C 84.2 26.017 84.5 26.417 84.9 26.417 L 88.3 26.417 C 88.8 26.417 89.3 26.017 89.4 25.517 L 91.4 12.717 C 91.4 12.517 91.1 12.117 90.7 12.117 Z M 85.5 19.317 C 85.1 21.417 83.5 22.917 81.3 22.917 C 80.2 22.917 79.4 22.617 78.8 21.917 C 78.2 21.217 78 20.317 78.2 19.317 C 78.5 17.217 80.3 15.717 82.4 15.717 C 83.5 15.717 84.3 16.117 84.9 16.717 C 85.5 17.417 85.7 18.317 85.5 19.317 Z"></path><path fill="#009cde" d="M 95.1 5.417 L 91.9 25.717 C 91.8 26.117 92.1 26.417 92.5 26.417 L 95.7 26.417 C 96.2 26.417 96.7 26.017 96.8 25.517 L 100 5.617 C 100.1 5.217 99.8 4.917 99.4 4.917 L 95.8 4.917 C 95.4 4.917 95.2 5.117 95.1 5.417 Z"></path></svg></button>        <% } else { %>            <p class="minicart-empty-text"><%= config.strings.empty %></p>        <% } %>    </div>    <input type="hidden" name="cmd" value="_cart" />    <input type="hidden" name="upload" value="1" />    <% for (var key in settings) { %>        <input type="hidden" name="<%= key %>" value="<%= settings[key] %>" />    <% } %></form>',
+   strings: {
+      button: 'Check Out with ',
+      header: 'Your Order',
+      terms: 'I have read and agree to the Terms & Conditions',
+      subtotal: 'Total:',
+      discount: 'Discount:',
+      empty: 'Your shopping cart is empty'}
+   });
+   paypal.minicart.view.bindForms();
+   $('#PayPalShoppingCart1').click(function(e)
+   {
+      e.stopPropagation();
+      paypal.minicart.view.show();
+      paypal.minicart.view.redraw();
+   });
+   function updatePayPalCart()
+   {
+      var total = 0;
+      paypal.minicart.cart.items().forEach(function(item) 
+      {
+         total += item._data.quantity;
+      });
+      $('#PayPalShoppingCart1-badge').text(total);
+      if (total > 0)
+      {
+         $('#PayPalShoppingCart1-badge').show();
+      }
+      else
+      {
+         $('#PayPalShoppingCart1-badge').hide();
+      }
+   }
+   updatePayPalCart();
+   paypal.minicart.cart.on('add', function()
+   {
+      updatePayPalCart();
+   });
+   paypal.minicart.cart.on('remove', function()
+   {
+      updatePayPalCart();
+   });
+   paypal.minicart.cart.on('change', function()
+   {
+      updatePayPalCart();
+   });
+   function aspectRatioRollOverText1()
+   {
+      var $obj = $("#RollOverText1");
+      var height = $obj.width() / 1;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioRollOverText1() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioRollOverText1();
+   });
+   aspectRatioRollOverText1();
+   $("#RollOverText1").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 1.00},{queue:false, duration:0});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:0});
+   });
+   function aspectRatioRollOverText2()
+   {
+      var $obj = $("#RollOverText2");
+      var height = $obj.width() / 1;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioRollOverText2() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioRollOverText2();
+   });
+   aspectRatioRollOverText2();
+   $("#RollOverText2").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 1.00},{queue:false, duration:0});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:0});
+   });
+   function aspectRatioRollOverText3()
+   {
+      var $obj = $("#RollOverText3");
+      var height = $obj.width() / 1;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioRollOverText3() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioRollOverText3();
+   });
+   aspectRatioRollOverText3();
+   $("#RollOverText3").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 1.00},{queue:false, duration:0});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:0});
+   });
+   $('#product1Dialog').on('show.bs.modal', function (e) 
+   {
+      $('#product1Dialog .modal-dialog').removeClass('animate-hide');
+      $('#product1Dialog .modal-dialog').addClass('animate-show');
+   });
+   $('#product1Dialog').on('hide.bs.modal', function (e)
+   {
+      $('#product1Dialog .modal-dialog').removeClass('animate-show');
+      var element = document.getElementById('product1Dialog');
+      var forceReflow = element.offsetWidth;
+      $('#product1Dialog .modal-dialog').addClass('animate-hide');
+   });
+   $('#product1Dialog .modal-dialog').draggable({handle: '.modal-header'});
+   $("#wb_quantity button").on('click', function()
+   {
+      var $input = $('#quantity');
+      var oldVal = $input.val().trim();
+      var newVal = 0;
+      if ($(this).attr('data-dir') == 'up')
+      {
+         if (oldVal < 10)
+         {
+            newVal = parseFloat(oldVal) + 1;
+         }
+         else
+         {
+            newVal = 10;
+         }
+      }
+      else
+      {
+         if (oldVal > 1)
+         {
+            newVal = parseFloat(oldVal) - 1;
+         }
+         else
+         {
+            newVal = 1;
+         }
+      }
+      $input.val(newVal);
+      $input.trigger('change');
+   });
+   $("#quantity").change(function()
+   {
+      $('#amount').val('$' + (Number($('#quantity').val())*12.99).toFixed(2));
+   });
+   $("#quantity").trigger('change');
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_newLayoutGrid').css('background-attachment', 'scroll');
+   }
+   $('body').on('click','[data-ecommerce-platform="paypal"]', function(e)
+   {
+      e.preventDefault();
+      e.stopPropagation();
+      paypal.minicart.cart.add(
+      {
+         amount: $(this).attr('data-amount'),
+         business: $(this).attr('data-business'),
+         currency_code: $(this).attr('data-currency-code'),
+         item_name: $(this).attr('data-item-name'),
+         item_number: $(this).attr('data-item-number'),
+         return: $(this).attr('data-success-url'),
+         cancel_return: $(this).attr('data-cancel-url')
+      });
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_headerLayoutGrid">
+<div id="headerLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerBreadcrumb" style="display:inline-block;width:455px;height:31px;z-index:0;vertical-align:top;">
+<ul id="headerBreadcrumb">
+<li><a href="" title="Business Hours"><i class="fa fa-clock-o">&nbsp;</i>Business Hours: Mon-Sat 8:00am-7:00pm</a></li>
+<li><a href=""><i class="fa fa-phone">&nbsp;</i>Call us now: +254769239090 / 0746651181</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerIcon2" style="display:inline-block;width:20px;height:20px;text-align:center;z-index:1;">
+<div id="headerIcon2"><i class="fa fa-twitter"></i></div>
+</div>
+<div id="wb_headerIcon3" style="display:inline-block;width:20px;height:20px;text-align:center;z-index:2;">
+<div id="headerIcon3"><i class="fa fa-instagram"></i></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_navigationLayoutGrid">
+<div id="navigationLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_navigationHeading" style="display:inline-block;width:100%;z-index:3;">
+<h1 id="navigationHeading"><a href="./index.html">DRIP SEASON</a></h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_navigationMenu" style="display:inline-block;width:100%;z-index:4;vertical-align:top;">
+<ul id="navigationMenu">
+<li><a href="./index.html">Home</a></li>
+<li><a href="#latestLayoutGrid1">Latest</a></li>
+<li><a href="shirts.html">shirts</a></li>
+<li><a href="shoes.html">shoes</a></li>
+<li><a href="accessories.html">Accessories</a></li>
+
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_PayPalShoppingCart1" style="display:inline-block;width:32px;height:32px;text-align:center;z-index:5;">
+<svg id="PayPalShoppingCart1" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M709 794 C726 777, 746 768, 769 768 C791 768, 811 777, 828 794 C844 811, 852 831, 853 854 C852 877, 844 896, 828 913 C811 930, 791 938, 769 938 C746 938, 726 930, 709 913 C691 896, 683 877, 683 854 C683 831, 691 811, 709 794 Z M85 86 L225 86 L265 170 L897 170 C909 170, 919 174, 927 183 C935 193, 939 202, 939 214 C939 215, 937 222, 933 234 L781 510 C765 539, 740 554, 707 554 L389 554 L351 624 L349 630 C349 637, 352 640, 359 640 L853 640 L853 726 L341 726 C318 726, 298 717, 282 700 C265 683, 257 663, 257 640 C257 627, 260 613, 267 600 L325 494 L171 170 L85 170Z  M282 794 C298 777, 318 768, 341 768 C362 768, 383 777, 401 794 C418 811, 427 831, 427 854 C427 877, 418 896, 401 913 C383 930, 362 938, 341 938 C318 938, 298 930, 282 913 C265 896, 257 877, 257 854 C257 831, 265 811, 282 794"/>
+</svg>
+
+<span id="PayPalShoppingCart1-badge">0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:49;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:6;">
+<a href="#headerLayoutGrid"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_rolloverLayoutGrid">
+<div id="rolloverLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="RollOverText1" style="overflow:hidden;display:block;position: relative;">
+   <a href="./shirts.html"><img alt="NEW IN" class="image" src="images/Screenshot_2022-02-18-14-35-41-737_com.instagram.android.jpg" width="303" height="303"></a>
+   <div class="caption">
+      <div class="title">NEW IN</div>
+      <p class="description">SHIRTS</p>
+      <a class="link" href="./shirts.html">Shop Now</a>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="RollOverText2" style="overflow:hidden;display:block;position: relative;">
+   <a href="./shoes.html"><img alt="NEW IN" class="image" src="images/Screenshot_2022-02-18-14-37-43-213_com.instagram.android.jpg" width="303" height="303"></a>
+   <div class="caption">
+      <div class="title">NEW IN</div>
+      <p class="description">SHOES</p>
+      <a class="link" href="./shoes.html">Shop Now</a>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="RollOverText3" style="overflow:hidden;display:block;position: relative;">
+   <a href="#collectionLayoutGrid"><img alt="NEW IN" class="image" src="images/Screenshot_2022-03-15-08-42-50-613_com.instagram.android.jpg" width="303" height="303"></a>
+   <div class="caption">
+      <div class="title">NEW IN</div>
+      <p class="description">ACCESSORIES</p>
+      <a class="link" href="./accessories.html">Shop Now</a>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_latestLayoutGrid1">
+<div id="latestLayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_latestHeading" style="display:inline-block;width:100%;z-index:10;">
+<h2 id="latestHeading">In Stock</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_latestLayoutGrid2">
+<div id="latestLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_latestCard1" style="display:flex;width:100%;text-align:center;z-index:11;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Designer Cloudy Shirt" data-item-number="shirt001" data-amount="1299" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard1-card-body">
+      <img id="latestCard1-card-item0" src="images/Screenshot_2022-03-15-08-41-47-169_com.instagram.android.jpg" width="1080" height="1080" alt="glasses" title="Summer sunglasse">
+      <div id="latestCard1-card-item1">Summer sunglasses</div>
+      <hr id="latestCard1-card-item2">
+      <div id="latestCard1-card-item3">$ 20</div>
+      <div id="latestCard1-card-item4">$ 27</div>
+      <hr id="latestCard1-card-item5">
+      <div id="latestCard1-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="summer sunglasses"  data-amount="20" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_latestCard2" style="display:flex;width:100%;text-align:center;z-index:12;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Designer Ganja Shirt" data-item-number="shirt002" data-amount="1499" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard2-card-body">
+      <img id="latestCard2-card-item0" src="images/Screenshot_2022-03-15-08-42-50-613_com.instagram.android.jpg" width="1080" height="1080" alt="glasses" title="Designer sunglasses">
+      <div id="latestCard2-card-item1">Designer sunglasses</div>
+      <hr id="latestCard2-card-item2">
+      <div id="latestCard2-card-item3">$ 24</div>
+      <div id="latestCard2-card-item4">$35</div>
+      <hr id="latestCard2-card-item5">
+      <div id="latestCard2-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Designer sunglasses"  data-amount="24" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_latestCard3" style="display:flex;width:100%;text-align:center;z-index:13;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Nike Air Jordan 4" data-item-number="sneaker001" data-amount="4499" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard3-card-body">
+      <img id="latestCard3-card-item0" src="images/Screenshot_2022-03-15-08-38-06-435_com.instagram.android.jpg" width="1080" height="1079" alt="watches" title="Gold Rolex">
+      <div id="latestCard3-card-item1">Gold Rolex</div>
+      <hr id="latestCard3-card-item2">
+      <div id="latestCard3-card-item3">$ 600</div>
+      <div id="latestCard3-card-item4">$ 800</div>
+      <hr id="latestCard3-card-item5">
+      <div id="latestCard3-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Gold Rolex"  data-amount="600" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_latestCard4" style="display:flex;width:100%;text-align:center;z-index:14;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Nike Air Max" data-item-number="sneaker002" data-amount="2999" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard4-card-body">
+      <img id="latestCard4-card-item0" src="images/Screenshot_2022-03-15-08-37-01-479_com.instagram.android.jpg" width="1080" height="1080" alt="watches" title="Emporio Armani ceramica">
+      <div id="latestCard4-card-item1">Emporio Armani ceramica</div>
+      <hr id="latestCard4-card-item2">
+      <div id="latestCard4-card-item3">$ 170.85</div>
+      <div id="latestCard4-card-item4">$ 200</div>
+      <hr id="latestCard4-card-item5">
+      <div id="latestCard4-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Emporio Armani ceramica"  data-amount="170.85" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_latestLayoutGrid3">
+<div id="latestLayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_latestCard5" style="display:flex;width:100%;text-align:center;z-index:15;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Chanel Sunglasses" data-item-number="sunglasses001" data-amount="1999" data-currency-code="" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard5-card-body">
+      <img id="latestCard5-card-item0" src="images/Screenshot_2022-03-15-08-37-04-566_com.instagram.android.jpg" width="1080" height="1080" alt="watch" title="Hublot coal">
+      <div id="latestCard5-card-item1">Hublot coal</div>
+      <hr id="latestCard5-card-item2">
+      <div id="latestCard5-card-item3">$ 27</div>
+      <div id="latestCard5-card-item4">$ 30</div>
+      <hr id="latestCard5-card-item5">
+      <div id="latestCard5-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Hublot coal"  data-amount="27" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_latestCard6" style="display:flex;width:100%;text-align:center;z-index:16;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Gucci Sunglasses"  data-amount="1599" data-currency-code="" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard6-card-body">
+      <img id="latestCard6-card-item0" src="images/Screenshot_2022-03-15-08-41-22-451_com.instagram.android.jpg" width="1080" height="1080" alt="Sneaker" title="Fashionida Aratica">
+      <div id="latestCard6-card-item1">Fashionida Aratica</div>
+      <hr id="latestCard6-card-item2">
+      <div id="latestCard6-card-item3">$ 35</div>
+      <div id="latestCard6-card-item4">$ 40</div>
+      <hr id="latestCard6-card-item5">
+      <div id="latestCard6-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Fashionida Aratica"  data-amount="35" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_latestCard7" style="display:flex;width:100%;text-align:center;z-index:17;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Bvlgari Watch" data-amount="4999" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard7-card-body">
+      <img id="latestCard7-card-item0" src="images/accessories-in-fashion4.jpg" width="1080" height="1080" alt="Sneakers" title="Gold necklace">
+      <div id="latestCard7-card-item1">Gold necklace</div>
+      <hr id="latestCard7-card-item2">
+      <div id="latestCard7-card-item3">$100</div>
+      <div id="latestCard7-card-item4">$105</div>
+      <hr id="latestCard7-card-item5">
+      <div id="latestCard7-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Gold necklace" data-item-number="" data-amount="100" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_latestCard8" style="display:flex;width:100%;text-align:center;z-index:18;" class="card" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Rolex Watch" d data-amount="7499" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart">
+   <div id="latestCard8-card-body">
+      <img id="latestCard8-card-item0" src="images/product_image_9f487e89-bc70-4c2b-830a-7fa3fac4be3a.jpg" width="1080" height="1080" alt="Sneakers" title="Zulu modern earings">
+      <div id="latestCard8-card-item1">Zulu earings</div>
+      <hr id="latestCard8-card-item2">
+      <div id="latestCard8-card-item3">$ 6</div>
+      <div id="latestCard8-card-item4">$ 10</div>
+      <hr id="latestCard8-card-item5">
+      <div id="latestCard8-card-item6" data-ecommerce-platform="paypal" data-business="paypal@mail.com" data-item-name="Zulu modern earings"  data-amount="6" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;ADD TO CART</a></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_newLayoutGrid">
+<div id="newLayoutGrid-overlay"></div>
+<div id="newLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Limited time offer</span>
+</div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;font-family:Arial;font-size:37px;"><strong>New Collection 2022 </strong></span>
+</div>
+<a id="Button1" href="./index.html" target="_blank" style="display:inline-block;width:170px;height:37px;z-index:21;">Discover More</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_serviceLayoutGrid">
+<div id="serviceLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_serviceCard1" style="display:inline-block;width:212px;height:59px;z-index:22;" class="card">
+   <div id="serviceCard1-card-body">
+      <div id="serviceCard1-card-item0"><i class="fa fa-truck"></i></div>
+      <div id="serviceCard1-card-item1">Free shipping</div>
+      <div id="serviceCard1-card-item2">Within the 254</div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_serviceCard2" style="display:inline-block;width:203px;height:59px;z-index:23;" class="card">
+   <div id="serviceCard2-card-body">
+      <div id="serviceCard2-card-item0"><i class="fa fa-phone"></i></div>
+      <div id="serviceCard2-card-item1">Contact us 24/7</div>
+      <div id="serviceCard2-card-item2">+254769239090/0746651181</div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_serviceCard3" style="display:inline-block;width:209px;height:59px;z-index:24;" class="card">
+   <div id="serviceCard3-card-body">
+      <div id="serviceCard3-card-item0"><i class="fa fa-sign-out"></i></div>
+      <div id="serviceCard3-card-item1">30 Days Return</div>
+   </div>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_serviceCard4" style="display:flex;width:100%;z-index:25;" class="card">
+   <div id="serviceCard4-card-body">
+      <div id="serviceCard4-card-item0"><i class="fa fa-lock"></i></div>
+      <div id="serviceCard4-card-item1">Secure Payments</div>
+      <div id="serviceCard4-card-item2">M-Pesa and Online Banking</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_links">
+<div id="links-overlay"></div>
+<div id="links">
+<div class="row">
+<div class="col-1">
+<div id="wb_linksText1">
+<span style="color:#FFFFFF;"><strong>SHOPPER</strong></span>
+</div>
+<div id="wb_contactAddress">
+<p>Mount Kenya University<br/>Kiambu, Thika</p>
+<p>Phone: +254769239090/ 0746651181</p>
+<p>Email: info.dripseason@gmail.com</p>
+</div>
+<div id="wb_contactIcon1" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:28;">
+<a href="./index.html"><div id="contactIcon1"><i class="fa fa-linkedin-square"></i></div></a>
+</div>
+<div id="wb_contactIcon2" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:29;">
+<a href="./index.html"><div id="contactIcon2"><i class="fa fa-facebook-official"></i></div></a>
+</div>
+<div id="wb_contactIcon3" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:30;">
+<a href="./index.html"><div id="contactIcon3"><i class="fa fa-twitter"></i></div></a>
+</div>
+<div id="wb_contactIcon4" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:31;">
+<a href="./index.html"><div id="contactIcon4"><i class="fa fa-youtube-play"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_linksText2">
+<span style="color:#FFFFFF;"><strong>COMPANY</strong></span>
+</div>
+<div id="wb_linksMenu2" style="display:inline-block;width:100%;z-index:33;">
+<ul id="linksMenu2" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">What&nbsp;We&nbsp;Do</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Services</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://www.wysiwygwebbuilder.com/forum/index.php" target="_self">Forum</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#" target="_self">Support</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#" target="_self">Privacy&nbsp;Policy</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_linksText3">
+<span style="color:#FFFFFF;"><strong>SUPPORT</strong></span>
+</div>
+<div id="wb_linksMenu1" style="display:inline-block;width:100%;z-index:35;">
+<ul id="linksMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Help&nbsp;&amp;&nbsp;Contact&nbsp;Us</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Returns&nbsp;&amp;&nbsp;Refunds</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Online&nbsp;Stores</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Terms&nbsp;&amp;&nbsp;Conditions</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="col-1">
+<div id="wb_footerText">
+<span style="color:#FFFFFF;">Copyright © 2022 BIT/2020/89965 Odero Nelson Aringo.&nbsp; </span>
+</div>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+
+<div id="product1Dialog" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title">Quick View</h4>
+</div>
+<div class="modal-body">
+<div id="wb_product1Heading" style="position:absolute;left:26px;top:19px;width:588px;height:37px;z-index:39;">
+<h2 id="product1Heading">T-Shirt</h2></div>
+<div id="wb_product1Text" style="position:absolute;left:278px;top:78px;width:364px;height:75px;z-index:40;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. </span></div>
+<form action="https://www.paypal.com/cgi-bin/webscr" id="PayPal2_form" method="post" style="margin:0;padding:0;" target="PayPal">
+<input type="hidden" name="business" value="orders@pablosoftwaresolutions.com">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="item_name" value="T-Shirt">
+<input type="hidden" name="item_number" value="SKU001">
+<input type="hidden" name="amount" value="19.99">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="">
+<input type="hidden" name="cancel_return" value="">
+<input type="hidden" name="receiver_email" value="orders@pablosoftwaresolutions.com">
+<input type="hidden" name="no_shipping" value="0">
+<input type="hidden" name="on0" value="Size">
+<div id="wb_quantity" style="position:absolute;left:430px;top:172px;width:118px;height:30px;text-align:center;">
+<div class="input-group">
+<span class="input-group-btn">
+<button class="btn btn-default" data-dir="down" title="Spinner Down" type="button">&#8722;</button>
+</span>
+<input type="text" id="quantity" name="quantity" value="1" title="Quantity">
+<span class="input-group-btn">
+<button class="btn btn-default" data-dir="up" title="Spinner Up" type="button">+</button>
+</span>
+</div></div>
+<select name="os0" size="1" id="size" style="position:absolute;left:279px;top:172px;width:134px;height:30px;z-index:41;">
+<option selected value="Small">Small</option>
+<option value="Medium">Medium</option>
+<option value="Large">Large</option>
+<option value="X-Large">X-Large</option>
+</select>
+<input id="PayPal2" type="image" name="submit" src="images/buy-logo-medium.png" style="position:absolute;left:278px;top:280px;z-index:41;" alt="Make payments with PayPal, it's fast, free, and secure!">
+</form>
+<input type="text" id="amount" style="position:absolute;left:335px;top:228px;width:88px;height:16px;z-index:42;" name="amount" value="$12.99" spellcheck="false">
+<label for="serviceLayoutGrid" id="Label1" style="position:absolute;left:278px;top:227px;width:45px;height:16px;line-height:16px;z-index:43;">Total:</label>
+<div id="wb_productShape1" style="position:absolute;left:26px;top:78px;width:236px;height:236px;z-index:44;">
+<div id="productShape1"><div id="productShape1_text"><div><span style="color:#F5F5F5;font-family:Arial;font-size:13px;">Your Image Goes Here</span></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/minicart.min.js"></script>
+</body>
+</html>
